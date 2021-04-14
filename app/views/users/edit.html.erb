@@ -1,0 +1,14 @@
+<%= form_with model: @user, url: edit_user_path(@user), method: :patch do |form| %>
+  <br><br>
+  <%= form.label :username, "Username:" %>
+  <%= form.text_field :username, :value => 'Your username here'%><br><br>
+
+  <%= form.label :email, "Email:" %>
+  <%= form.text_field :email, :value => 'example@mail.com'%><br><br>
+
+  <%= form.label :password, "Password:" %>
+  <%= form.password_field :password %><br><br>
+
+  <%= form.submit "Submit" %>
+
+<% end %>
